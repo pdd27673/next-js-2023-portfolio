@@ -7,6 +7,11 @@ import Skills from './components/Skills'
 import Work from './components/Work'
 import RootLayout from './components/layout'
 import { section, Header } from './components/Header'
+import { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Pauls Portfolio',
+}
 
 export default function Home() {
   const sections: section[] = [

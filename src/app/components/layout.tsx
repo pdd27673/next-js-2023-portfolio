@@ -1,9 +1,9 @@
 import Head from "next/head"
 import localFont from 'next/font/local'
 
-export const seasonFont = localFont({
+const seasonFont = localFont({
     src: '../../../public/fonts/the-seasons/Fontspring-DEMO-theseasons-reg.otf',
-    display: 'swap',
+    display: "auto",
 })
 
 export default function RootLayout({
@@ -13,9 +13,6 @@ export default function RootLayout({
 }) {
     return (
         <>
-            <Head>
-                <title>Paul's Portfolio</title>
-            </Head>
             <html lang="en" className={seasonFont.className}>
                 <body>{children}</body>
             </html>
