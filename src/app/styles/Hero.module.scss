@@ -1,0 +1,105 @@
+.hero {
+    width: 60rem;
+    height: 100vh;
+}
+
+.firstRowGrid {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "firstName url";
+    grid-template-columns: 5fr 1fr;
+
+
+    .firstName {
+        grid-area: firstName;
+        font-size: 190px;
+    }
+
+    .firstUrl {
+        grid-area: url;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .circle {
+            width: 5rem;
+            height: 3rem;
+            background-color: rgb(234, 179, 8);
+            border-radius: 50%;
+            margin-right: 2rem;
+
+        }
+
+        .link {
+            font-size: 20px;
+            word-wrap: break-word;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.secondRow {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "secondPhoto secondLastName";
+    grid-template-columns: 1fr 4fr;
+    padding-bottom: 1rem;
+
+    border-bottom: solid .2rem white;
+
+    .secondPhoto {
+        grid-area: secondPhoto;
+        display: flex;
+        flex-direction: row;
+        height: 15rem;
+
+        .secondRectangle {
+            border-radius: 2%;
+            background-color: rgb(234, 179, 8);
+            height: 15rem;
+            width: 13rem;
+            margin-right: 1.5rem;
+        }
+
+        .photo {
+            border-radius: 2%;
+            height: 15rem;
+            width: 30rem;
+        }
+    }
+
+    .secondLastName {
+        grid-area: secondLastName;
+        font-size: 190px;
+        justify-self: end;
+    }
+}
+
+
+.thirdRow {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "thirdTitle thirdArrow thirdPortfolioText";
+    grid-template-columns: 1fr 1fr 1fr;
+
+    margin-top: 4rem;
+    font-size: 2rem;
+
+    .thirdTitle {
+        grid-area: thirdTitle;
+    }
+
+    .thirdArrow {
+        grid-area: thirdArrow;
+        justify-self: center;
+    }
+
+    .thirdPortfolioText {
+        grid-area: thirdPortfolioText;
+        justify-self: end;
+    }
+}

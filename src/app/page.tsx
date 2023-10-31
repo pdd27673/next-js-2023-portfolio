@@ -8,6 +8,10 @@ import Work from './components/Work'
 import RootLayout from './components/layout'
 import { section, Header } from './components/Header'
 import { Metadata } from 'next'
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+
+config.autoAddCss = false
 
 export const metadata: Metadata = {
   title: 'Pauls Portfolio',
@@ -15,7 +19,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
 
-  const workInProgess = true;
+  const workInProgress = false;
 
   const sections: section[] = [
     { name: 'Hero', href: '#hero', component: <Hero />, displayInHeader: false },
@@ -30,12 +34,12 @@ export default function Home() {
   return (
     <RootLayout>
       <main className="flex min-h-screen flex-col items-center justify-between">
-        {workInProgess && (
+        {workInProgress && (
           <div className=" text-white text-center p-4 w-full">
             COMING SOON...
           </div>
         )}
-        {!workInProgess && (
+        {!workInProgress && (
           <>
             <Header sections={sections} />
             {sections.map((section, index) => (
