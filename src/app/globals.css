@@ -25,3 +25,17 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@font-face {
+  font-family: "SansSerif";
+  src: url("./asset/NeueMachina/NeueMachina-Light.otf");
+  src: url("./asset/NeueMachina/NeueMachina-Regular.otf");
+  src: url("./asset/NeueMachina/NeueMachina-Ultrabold.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1, h2, h3, p, a, div {
+  font-family: SansSerif, sans-serif;
+  font-weight: 400;
+}

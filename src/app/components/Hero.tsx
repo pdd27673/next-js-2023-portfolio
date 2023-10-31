@@ -24,7 +24,7 @@ const Hero = () => {
         <div className={styles.hero}>
             {/* First Row */}
             <div className={styles.firstRowGrid}>
-                <div className={styles.firstName}>Paul</div>
+                <h1 className={styles.firstName}>Paul</h1>
                 <div className={styles.firstUrl}>
                     <div className={styles.circle}></div>
                     <a href="https://github.com/yourusername" className={styles.link}>
@@ -39,7 +39,7 @@ const Hero = () => {
                     <div className={styles.secondRectangle}></div>
                     <Image src={profilePic} className={styles.photo} alt="Your Image"/>
                 </div>
-                <div className={styles.secondLastName}>Doho</div>
+                <h1 className={styles.secondLastName}>Doho</h1>
             </div>
 
             {/* Third Row */}
