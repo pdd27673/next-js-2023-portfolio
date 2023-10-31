@@ -27,8 +27,8 @@ const Hero = () => {
                 <h1 className={styles.firstName}>Paul</h1>
                 <div className={styles.firstUrl}>
                     <div className={styles.circle}></div>
-                    <a href="https://github.com/yourusername" className={styles.link}>
-                        https://github.com/ yourusername
+                    <a href="https://github.com/pdd27673" target={"_blank"} className={styles.link}>
+                        https://github.com/ pdd27673
                     </a>
                 </div>
             </div>
