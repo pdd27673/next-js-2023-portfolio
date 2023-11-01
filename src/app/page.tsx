@@ -10,6 +10,7 @@ import { section, Header } from './components/Header'
 import { Metadata } from 'next'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import styles from "./page.module.scss"
 
 config.autoAddCss = false
 
@@ -40,14 +41,14 @@ export default function Home() {
           </div>
         )}
         {!workInProgress && (
-          <>
+          <div className={styles.pageRow}>
             <Header sections={sections} />
             {sections.map((section, index) => (
-              <section key={`${index}-${section.name}`} id={section.name.toLowerCase()} className="h-screen">
+              <section key={`${index}-${section.name}`} id={section.name.toLowerCase()} className={styles.section}>
                 {section.component}
               </section>
             ))}
-          </>
+          </div>
         )}
       </main>
     </RootLayout>

@@ -15,7 +15,7 @@ export interface HeaderProps {
 export const Header: React.FC<HeaderProps> = ({ sections }) => {
 
   return (
-    <header className="p-4 shadow-md flex justify-center items-center">
+    <header className="p-4 flex justify-center items-center">
       <nav>
         <ul className="flex space-x-4">
           {sections

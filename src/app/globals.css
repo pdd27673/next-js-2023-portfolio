@@ -8,7 +8,7 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -28,14 +28,33 @@ body {
 
 @font-face {
   font-family: "SansSerif";
-  src: url("./asset/NeueMachina/NeueMachina-Light.otf");
   src: url("./asset/NeueMachina/NeueMachina-Regular.otf");
-  src: url("./asset/NeueMachina/NeueMachina-Ultrabold.otf");
   font-weight: 400;
   font-style: normal;
 }
 
-h1, h2, h3, p, a, div {
+@font-face {
+  font-family: "SansSerifBold";
+  src: url("./asset/NeueMachina/NeueMachina-Ultrabold.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SansSerifLight";
+  src: url("./asset/NeueMachina/NeueMachina-Light.otf");
+  font-weight: 200;
+  font-style: normal;
+}
+
+h1, h2, h3 {
+  font-family: SansSerifBold, sans-serif;
+}
+
+a, div, span {
   font-family: SansSerif, sans-serif;
-  font-weight: 400;
+}
+
+p {
+  font-family: SansSerifLight, sans-serif;
 }

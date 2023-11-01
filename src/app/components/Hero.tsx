@@ -8,17 +8,6 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 type Props = {}
 
-// const Hero = (props: Props) => {
-//   return (
-//     <>
-//       <div>Paul</div>
-//       <div></div>
-//       <div>Doho</div>
-//     </>
-//   )
-// }
-
-
 const Hero = () => {
     return (
         <div className={styles.hero}>
@@ -28,7 +17,7 @@ const Hero = () => {
                 <div className={styles.firstUrl}>
                     <div className={styles.circle}></div>
                     <a href="https://github.com/pdd27673" target={"_blank"} className={styles.link}>
-                        https://github.com/ pdd27673
+                        https:// github.com/ pdd27673
                     </a>
                 </div>
             </div>
