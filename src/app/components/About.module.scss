@@ -14,7 +14,7 @@
 
   .p2 {
     font-size: large;
-    padding: 1rem 0rem .3rem 0rem;
+    padding: 1rem 0 .3rem 0;
     margin-top: 3rem;
     width: max-content;
   }
@@ -26,7 +26,7 @@
 
   .aboutSectionHeader {
     font-size: 125px;
-    padding: 3rem 0rem 2rem 0rem;
+    padding: 3rem 0 2rem 0;
   }
 
   .aboutText {
@@ -45,6 +45,10 @@
     }
   }
 
+}
+
+.link:hover {
+  text-decoration: underline #fedb51;
 }
 
 .photoRow {

@@ -37,7 +37,7 @@
             word-wrap: break-word;
 
             &:hover {
-                text-decoration: underline;
+                text-decoration: underline #fedb51;
             }
         }
     }
@@ -99,6 +99,10 @@
     .thirdArrow {
         grid-area: thirdArrow;
         justify-self: center;
+
+        &:hover {
+            color: #fedb51;
+        }
     }
 
     .thirdPortfolioText {

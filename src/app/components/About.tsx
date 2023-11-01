@@ -3,9 +3,8 @@ import styles from "./About.module.scss"
 import profilePic from "../../../public/images/hero-profile.jpg";
 import Image from "next/image";
 
-type Props = {}
 
-const About = (props: Props) => {
+const About = () => {
     return (
         <>
             <div className={styles.about}>
@@ -16,7 +15,7 @@ const About = (props: Props) => {
                     <div className={styles.aboutText}>
                         <p>Highly meticulous and skilled Software Development Engineer with 2 years of extensive experience in fullstack development, cloud infrastructure management, and meticulous documentation verification.  </p>
                         <p>I am enthusiastic about utilizing my expertise to propel innovation and streamline operations within a dynamic team setting. Keen on embracing challenging positions that facilitate personal and collective growth while promoting the sharing of knowledge. </p>
-                        <p className={styles.link}>www.pauldoho.com</p>
+                        <a href={"www.pauldoho.com"} className={styles.link}>www.pauldoho.com</a>
                     </div>
                 </div>
                 <div className={styles.photoRow}>
